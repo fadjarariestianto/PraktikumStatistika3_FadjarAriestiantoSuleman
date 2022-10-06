@@ -1,0 +1,28 @@
+> data_fadjar = read.csv("C:/Users/ASUS/Documents/Documents/BahanPraktikum1_DataFadjar.csv")
+> View(data_fadjar)
+> fadjar <- data_fadjar[4]
+> View(data_fadjar)
+> fadjar$Tinggi.Badan <- ifelse(fadjar$Tinggi.Badan > 160, c("Tinggi"), c("Pendek"))
+> fadjar <- data_fadjar[4]
+> View(fadjar)
+> fadjar$Tinggi.Badan <- ifelse(fadjar$Tinggi.Badan > 160, c("Tinggi"), c("Pendek"))
+> View(fadjar)
+> fadjar$Jurusan <- "Infor21"
+> View(fadjar)
+> fadjar$Fakultas <- "FTI"
+> View("fadjar")
+> fadjar$Fakultas <-NULL
+> View("fadjar")
+> data_Fadjar.kolom1dan2 <- data_fadjar[,1:2]
+> View(data_Fadjar.kolom1dan2)
+> data_Fadjar.kolom3dan4 <- data_fadjar[,3:4]
+> View(data_Fadjar.kolom3dan4)
+> data_fadjar.kolom <-cbind(data_Fadjar.kolom1dan2,data_Fadjar.kolom3dan4)
+> View(data_fadjar.kolom)
+> data_fadjar.baris1sd5 <- data_fadjar[1:5,]
+> View(data_fadjar.baris1sd5)
+> data_fadjar.baris25sd30<-data_fadjar[25:30,]
+> data_fadjar.baris <- rbind(data_fadjar.baris1sd5,data_fadjar.baris25sd30)
+> View(data_fadjar.baris)
+> data_fadjar.sort <- data_fadjar[order(data_fadjar$Waktu.perjalanan),]
+> View(data_fadjar.sort)
